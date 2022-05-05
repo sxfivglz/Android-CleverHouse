@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroSensor">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="44dp"
+        android:fontFamily="@font/lexend_deca"
+        android:gravity="left"
+        android:text="Los sensores disponibles son:                        Temperatura, distancia y luminosidad"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@id/editTextanadirsensor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.622" />
+
+    <EditText
+        android:id="@+id/editTextanadirsensor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/black"
+        android:defaultFocusHighlightEnabled="false"
+        android:drawableTint="@color/black"
+        android:fontFamily="@font/lexend_deca"
+        android:foregroundTint="@color/black"
+        android:hint="Escribe el nombre del sensor"
+        android:singleLine="true"
+        android:textColorHighlight="@color/gray"
+        android:textColorLink="@color/black"
+        android:textCursorDrawable="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/btnanadirsensor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnanadirsensor"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/blue_king"
+        android:text="Añadir sensor"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextanadirsensor" />
+</androidx.constraintlayout.widget.ConstraintLayout>

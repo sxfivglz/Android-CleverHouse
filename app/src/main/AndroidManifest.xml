@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.intch">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_iconocasa"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_iconocasa"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IntCH"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".BorrarInv"
+            android:exported="false" />
+        <activity
+            android:name=".MostrarInv"
+            android:exported="false" />
+        <activity
+            android:name=".AgregarInv"
+            android:exported="false" />
+        <activity
+            android:name=".EsperaInvitado"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroCasaInv"
+            android:exported="false" />
+        <activity
+            android:name=".ElimHab"
+            android:exported="false" />
+        <activity
+            android:name=".FormularioHabitacion"
+            android:exported="false"
+            android:parentActivityName=".ModHab" />
+        <activity
+            android:name=".ModHab"
+            android:exported="false" />
+        <activity
+            android:name=".FormularioCasa"
+            android:exported="false"
+            android:parentActivityName="Models.ModCasa" />
+        <activity
+            android:name=".ElimCasa"
+            android:exported="false" />
+        <activity
+            android:name="Models.ModCasa"
+            android:exported="false" />
+        <activity
+            android:name=".GraficaSensor"
+            android:exported="false" />
+        <activity
+            android:name=".HistorialSensor"
+            android:exported="false"
+            android:parentActivityName=".DetalleSensor" />
+        <activity
+            android:name=".DetalleSensor"
+            android:exported="false"
+            android:parentActivityName=".DetalleHabitacion" />
+        <activity
+            android:name=".RegistroSensor"
+            android:exported="false" />
+        <activity
+            android:name=".DetalleHabitacion"
+            android:allowBackup="true"
+            android:exported="false"
+            android:parentActivityName=".Inicio" />
+        <activity
+            android:name=".Inicio"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroCasa"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroHabitaciones"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroHabitacion"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main" />
+        <activity
+            android:name=".ConfDuenoInv"
+            android:exported="false" />
+        <activity
+            android:name=".Registro"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

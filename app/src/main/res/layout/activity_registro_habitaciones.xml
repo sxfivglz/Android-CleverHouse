@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroHabitaciones">
+    <TextView
+        android:id="@+id/txtregistrohab"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="70dp"
+        android:fontFamily="@font/lexend_deca"
+        android:text="Añadir habitaciones"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/checkcocina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.176" />
+
+    <CheckBox
+        android:id="@+id/checkcocina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:fontFamily="@font/lexend_deca"
+        android:layout_marginTop="56dp"
+        android:layout_marginRight="25dp"
+        android:buttonTint="@color/black"
+        android:drawableTint="@color/blue_king"
+        android:layoutDirection="rtl"
+        android:text="Cocina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtregistrohab" />
+
+    <CheckBox
+        android:id="@+id/checkbano"
+        android:fontFamily="@font/lexend_deca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:buttonTint="@color/black"
+        android:drawableTint="@color/blue_king"
+        android:layoutDirection="rtl"
+        android:text="Baño"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkcocina" />
+
+    <CheckBox
+        android:id="@+id/checkprincipal"
+        android:fontFamily="@font/lexend_deca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:buttonTint="@color/black"
+        android:drawableTint="@color/blue_king"
+        android:layoutDirection="rtl"
+        android:text="Habitación principal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbano" />
+
+    <CheckBox
+        android:id="@+id/checkhab"
+        android:fontFamily="@font/lexend_deca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:buttonTint="@color/black"
+        android:drawableTint="@color/blue_king"
+        android:layoutDirection="rtl"
+        android:text="Habitación"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkprincipal" />
+
+    <CheckBox
+        android:id="@+id/checksala"
+        android:fontFamily="@font/lexend_deca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:buttonTint="@color/black"
+        android:drawableTint="@color/blue_king"
+        android:layoutDirection="rtl"
+        android:text="Sala"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkhab" />
+
+    <CheckBox
+        android:id="@+id/checkcomedor"
+        android:fontFamily="@font/lexend_deca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:buttonTint="@color/black"
+        android:drawableTint="@color/blue_king"
+        android:text="Comedor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checksala"
+        android:layoutDirection="rtl" />
+
+    <Button
+        android:id="@+id/btnanadirhab"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30dp"
+        android:text="Añadir habitaciones"
+        android:backgroundTint="@color/blue_king"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/checkcomedor" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:fontFamily="@font/lexend_deca"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnanadirhab" />
+
+    <TextView
+        android:id="@+id/linkagregarhabs"
+        android:fontFamily="@font/lexend_deca"
+        android:layout_width="107dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:text=""
+        android:textColor="@color/blue_king"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnanadirhab" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
